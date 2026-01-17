@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+header{
+    /* background: linear-gradient(180.00deg, rgba(17.41, 17.41, 17.41, 1) 0%,rgba(119.41, 119.41, 119.41, 0) 100%); */
+    background-color: #4d4b4b;
+}
+
+/* Shared style */
+
+.home-btn{
+    border-radius: 46px;
+    background-color: #E6533C;
+    padding: 8px 20px;
+    margin-left: 2px;
+}
+
+.about{
+    margin-right: 20px;
+}
+
+/* Navigation bar related style */
+
+#nav-parent{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 57px;
+    padding-bottom: 57px;
+}
+
+.nav-items-parent{
+    display: flex;
+    gap: 47px;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+}
+
+#nav-parent h3{
+    color: #E6533C;
+    font-size: 2.25rem;
+    font-weight: 800;
+    text-align: center;
+    margin-left: -29px;
+}
+
+/* Banner related style */
+
+#banner-parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 87px;
+}
+
+.text-content{
+    max-width: 520px;
+}
+
+.text-content h1{
+    color: #FFFFFF;
+    font-size: 4.8rem;
+}
+
+.text-content p{
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 24px;
+    margin-top: 28px;
+}
+
+.btn-div{
+    margin: 28px;
+    margin-left: -0.5px;
+    display: flex;
+    align-items: start;
+}
+
+.btn-1{
+    padding: 16px 40px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(230, 83, 60, 1);
+    border-radius: 42px;
+    font-size: 1.12rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    transition: 0.4s ease;
+}
+
+.btn-2{
+    color: #FFFFFF;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 16px 40px;
+    border-radius: 42px;
+    font-size: 1.12rem;
+    font-weight: 600;
+    border: 1px solid #FFFFFF;
+    margin-left: 14px;
+    transition: 0.4s ease;
+}
+
+.btn-1:hover{
+    background-color: #FFFFFF;
+    color: #E6533C;
+}
+
+.btn-2:hover{
+    background-color: #FFFFFF;
+    color: #E6533C;
+}
+
+/* Banner image related style */
+
+.banner-image{
+    display: flex;
+}
+
+.banner-image img{
+    position: relative;
+}
+
+.tool-1{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 16px 24px;
+    border-radius: 12px;
+    right: 12%;
+    top: 44%;
+}
+
+.tool-1 h2{
+    color: #FFFFFF;
+    font-family: 2.5rem;
+}
+
+.tool-1 p{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.tool-2{
+    position: absolute;
+    background-color: rgba(48, 48, 48, 0.54);
+    padding: 16px 24px;
+    border-radius: 12px;
+    bottom: 10%;
+    right: 36%;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.tool-2 h3{
+    font-size: 1.5rem;
+    color: #FAFAF9;
+}
+
+.tool-2 p{
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.ball{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #E6533C;
+}
+
+
+/* Media quary for small device */
+
+@media screen and (max-width: 576px){
+    #nav-parent{
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    #nav-parent h3{
+        /* text-align: center; */
+        margin-left: 0;
+    }
+
+    .nav-items-parent{
+        border: none;
+        gap: 30px;
+        text-align: cenetr;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 25px;
+    }
+
+    /* responsive for banner */
+
+    #banner-parent{
+        flex-direction: column;
+    }
+    
+    .btn-1{
+        margin-left: 20px;
+    }
+
+    .banner-image img{
+        position: relative;
+    }
+
+    .tool-1{
+        padding: 16px 24px;
+        right: 0;
+        top: 1004px;
+        margin-right: 10px;
+        position: absolute;
+    }
+    .tool-2{
+        position: absolute;
+        padding: 16px 24px;
+        bottom: 0%;
+    }
+}
+
+/* Media quary for medium device */
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    #banner-parent{
+        flex-direction: column;
+    }
+
+    .tool-2{
+        right: 0;
+        bottom: 100px;
+    }
+}
