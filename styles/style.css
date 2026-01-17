@@ -14,8 +14,11 @@
   font-optical-sizing: auto;
 }
 
+body{
+    background-color: rgba(0, 0, 0, 1);
+}
+
 header{
-    /* background: linear-gradient(180.00deg, rgba(17.41, 17.41, 17.41, 1) 0%,rgba(119.41, 119.41, 119.41, 0) 100%); */
     background-color: #4d4b4b;
 }
 
@@ -191,6 +194,49 @@ header{
     background-color: #E6533C;
 }
 
+/* Habit section related style */
+
+#habit-parent{
+    max-width: 1044px;
+    margin: 100px auto;
+}
+
+#habit-parent h2{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+#habit-parent{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.habit-image-container{
+    display: flex;
+    margin-top: 58px;
+}
+
+.habit-image img{
+    border-radius: 50%;
+}
+
+.habit-image h4{
+    font-size: 1.12rem;
+    color: #FFFFFF;
+    margin-top: 30px;
+    margin-bottom: 6px;
+}
+
+.habit-image p{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 18px;
+}
+
 
 /* Media quary for small device */
 
@@ -240,6 +286,21 @@ header{
         padding: 16px 24px;
         bottom: 0%;
     }
+
+    /* Habit section responsive */
+
+    #habit-parent{
+        margin-top: 0;
+    }
+
+    .habit-image-container{
+        flex-direction: column;
+    }
+
+    .habit-image p{
+        margin-bottom: 40px;
+    }
+
 }
 
 /* Media quary for medium device */
@@ -253,4 +314,15 @@ header{
         right: 0;
         bottom: 100px;
     }
+
+    /* Hbit section responsive */
+
+    .habit-image-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .habit-image-container p{
+        margin-bottom: 40px;
+    }
+
 }
